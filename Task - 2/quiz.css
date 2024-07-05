@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header nav {
+    background-color: #1E3653;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+header nav h3 {
+    margin: 0;
+}
+
+main {
+    margin-top: 80px;
+}
+
+.quiz-container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left {
+    border-right: 1px solid #ddd;
+}
+
+.question {
+    font-size: 1.5rem;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.option {
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.option:hover {
+    background-color: #ddd;
+}
+
+.option:active {
+    background-color: #ccc;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    background-color: #1E3653;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #555;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
