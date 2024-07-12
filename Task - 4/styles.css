@@ -22,6 +22,9 @@ body {
 }
 
 .box2 {
+    position: absolute;
+    top: 1300px;
+    right: -100px;
     height: 155px;
     width: 155px;
     border: 1px solid #ABB2BF;
@@ -86,8 +89,9 @@ body {
     cursor: pointer;
 }
 
-.main-intro-links button:active {
-    background-color: #ABB2BF;
+.main-intro-links button:active,
+.main-intro-links img:active {
+    background-color: #C778DD;
 }
 
 
@@ -198,9 +202,68 @@ body {
 }
 
 
+/* projects list */
 
+.projects {
+    margin: 171px 145px 20px;
+}
 
+.project-heading {
+    display: flex;
+    align-items: center;
+}
 
+.project-heading h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.projects-heading-line {
+    margin-left: 16px;
+    width: 75%;
+    height: 1px;
+    background-color: #C778DD;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+}
+
+.project-item {
+    width: 309px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 33px;
+    margin: 0px 16px;
+    border: 1px solid #C778DD;
+}
+
+.project-item:hover {
+    border: 1px solid #0C8CE9;
+}
+
+.project-item-img {
+    width: 243px;
+    height: auto;
+}
+
+.project-details h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #C778DD;
+}
+
+.project-details p {
+    font-size: 16px;
+    color: #ABB2BF;
+    font-weight: 500;
+}
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
