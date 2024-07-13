@@ -1,0 +1,291 @@
+body {
+    font-family: "Fira Code", monospace;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 100px;
+    background-color: #282C33;
+    overflow-x: hidden;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+}
+
+.box1 {
+    position: absolute;
+    top: 660px;
+    right: -30px;
+    height: 92px;
+    width: 92px;
+    border: 1px solid #ABB2BF;
+}
+
+.box2 {
+    position: absolute;
+    top: 1300px;
+    right: -100px;
+    height: 155px;
+    width: 155px;
+    border: 1px solid #ABB2BF;
+}
+
+.box3 {
+    height: 155px;
+    width: 155px;
+    border: 1px solid #ABB2BF;
+}
+
+
+
+/* content */
+
+.main-content {
+    margin: 171px 145px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main-intro {
+    width: 537px;
+    height: auto;
+}
+
+.main-content h2 {
+    /* padding: 0%; */
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.purple {
+    font-size: inherit;
+    font-weight: inherit;
+    color: #C778DD;
+}
+
+.main-content p {
+    width: 463px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ABB2BF;
+}
+
+.main-intro-links {
+    display: flex;
+    align-items: center;
+}
+
+.main-intro-links button {
+    padding: 16px;
+    width: 148px;
+    height: 53px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #C778DD;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main-intro-links button:active,
+.main-intro-links img:active {
+    background-color: #C778DD;
+}
+
+
+.main-intro-links img {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.main-artifacts {
+    position: relative;
+    width: 100%;
+    height: 386px; 
+}
+
+.main-artifact-svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-artifact-svg-logo {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    width: 150px;
+    height: auto;
+}
+
+.main-artifact-svg-dot {
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+    width: 80px;
+    height: auto;
+}
+
+.main-artifact-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dotlottie-player {
+    width: 305px;
+    height: 305px;
+}
+
+
+.quote-box {
+    margin: 20px 145px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.top-quote , .bottom-quote {
+    position: absolute;
+    background-color: #282C33;
+}
+
+.top-quote {
+    left: 230px;
+    top: -10px;
+}
+
+.bottom-quote {
+    left: 750px;
+    top: 88px;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 155px;
+    margin-right: 320px;
+    border: 1px solid #ABB2BF;
+}
+
+.quote h2 {
+    padding: 16px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 650px;
+    margin-right: 320px;
+    border: 1px solid #ABB2BF;
+    border-top: none;
+}
+
+.author h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/* projects list */
+
+.projects {
+    margin: 171px 145px 20px;
+}
+
+.project-heading {
+    display: flex;
+    align-items: center;
+}
+
+.project-heading h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.projects-heading-line {
+    margin-left: 16px;
+    width: 75%;
+    height: 1px;
+    background-color: #C778DD;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+}
+
+.project-item {
+    width: 309px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 33px;
+    margin: 0px 16px;
+    border: 1px solid #C778DD;
+}
+
+.project-item:hover {
+    border: 1px solid #0C8CE9;
+}
+
+.project-item-img {
+    width: 243px;
+    height: auto;
+}
+
+.project-details h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #C778DD;
+}
+
+.project-details p {
+    font-size: 16px;
+    color: #ABB2BF;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .main-artifact-svg-logo {
+        left: 100px;
+        width: 120px;
+    }
+    .main-artifact-svg-dot {
+        right: 150px;
+        width: 70px;
+    }
+    .dotlottie-player {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-artifacts,
+    .main-artifact-svg-dot,
+    .dotlottie-player,
+    .main-artifact-svg-logo {
+        visibility: hidden;
+    }
+}
